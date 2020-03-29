@@ -23,7 +23,12 @@ class ReceiptTableViewCell: UITableViewCell {
     }
     
     func configure(model: IceCreamModel, total: Int) {
-        iceCreamLabel.text = model.iceCreamName
+        if total > 1 {
+            iceCreamLabel.text = "\(model.iceCreamName) (\(total))"
+        } else {
+            iceCreamLabel.text = model.iceCreamName
+        }
+        
         priceLabel.text = model.price
     }
 
