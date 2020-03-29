@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xv5-hZ-AGZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="IceCreamParlorChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D96-ZI-ELD">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9Zw-Xg-xJR">
+                                    <size key="itemSize" width="153" height="219"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="5" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="IceCreamCollectionViewCell" id="0Hp-ki-p4Y" customClass="IceCreamCollectionViewCell" customModule="IceCreamParlorChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="5" width="153" height="219"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9Ig-E9-c5c">
+                                            <rect key="frame" x="0.0" y="0.0" width="153" height="219"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vu-NU-oY4" customClass="IceCreamView" customModule="IceCreamParlorChallenge" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="153" height="219"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="0vu-NU-oY4" firstAttribute="leading" secondItem="9Ig-E9-c5c" secondAttribute="leading" id="9su-GA-X0S"/>
+                                                <constraint firstItem="0vu-NU-oY4" firstAttribute="top" secondItem="9Ig-E9-c5c" secondAttribute="top" constant="0.1042894999428654" id="JdY-Ys-a6f"/>
+                                                <constraint firstAttribute="trailing" secondItem="0vu-NU-oY4" secondAttribute="trailing" constant="-2.8421709430404007e-14" id="sca-Yr-5yj"/>
+                                                <constraint firstAttribute="bottom" secondItem="0vu-NU-oY4" secondAttribute="bottom" constant="-0.1042894999428654" id="zfK-JW-2kF"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="iceCreamView" destination="0vu-NU-oY4" id="eXI-CZ-KUr"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="D96-ZI-ELD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4XA-DX-d5z"/>
+                            <constraint firstItem="D96-ZI-ELD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5fw-4O-0dJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D96-ZI-ELD" secondAttribute="trailing" id="6Sj-dJ-oba"/>
+                            <constraint firstItem="D96-ZI-ELD" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="aYG-83-7Wy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v0b-HT-NVq"/>
+                    <connections>
+                        <outlet property="collectionView" destination="D96-ZI-ELD" id="9I7-CK-UlT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544.92753623188412" y="73.660714285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3lq-aI-JAd">
+            <objects>
+                <navigationController id="xv5-hZ-AGZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Xcp-9x-DMC">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="J0M-Fm-XCB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5k3-Mu-g4y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-397" y="74"/>
+        </scene>
+    </scenes>
+</document>

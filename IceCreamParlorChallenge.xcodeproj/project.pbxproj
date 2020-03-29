@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0948252E2430EFD800C82A2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948252D2430EFD800C82A2B /* AppDelegate.swift */; };
+		094825302430EFD800C82A2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948252F2430EFD800C82A2B /* SceneDelegate.swift */; };
+		094825352430EFD800C82A2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094825332430EFD800C82A2B /* Main.storyboard */; };
+		094825372430EFDA00C82A2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094825362430EFDA00C82A2B /* Assets.xcassets */; };
+		0948253A2430EFDA00C82A2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 094825382430EFDA00C82A2B /* LaunchScreen.storyboard */; };
+		0948254A2430F2DD00C82A2B /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094825472430F2DD00C82A2B /* WelcomeViewController.swift */; };
+		0948254E2430F58E00C82A2B /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948254D2430F58E00C82A2B /* UIColorExtensions.swift */; };
+		094825502430F64200C82A2B /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948254F2430F64200C82A2B /* GlobalConstants.swift */; };
+		094825522430F95B00C82A2B /* IceCreamNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094825512430F95B00C82A2B /* IceCreamNetworkService.swift */; };
+		094825542430FCF800C82A2B /* IceCreamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094825532430FCF800C82A2B /* IceCreamModel.swift */; };
+		094825562431006500C82A2B /* IceCreamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094825552431006500C82A2B /* IceCreamViewModel.swift */; };
+		0948255A243103D700C82A2B /* IceCreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09482559243103D700C82A2B /* IceCreamView.swift */; };
+		0948255C243103EB00C82A2B /* IceCreamView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0948255B243103EB00C82A2B /* IceCreamView.xib */; };
+		0948255E24310C5B00C82A2B /* IceCreamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948255D24310C5B00C82A2B /* IceCreamCollectionViewCell.swift */; };
+		0948256024310E0700C82A2B /* WelcomeViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948255F24310E0700C82A2B /* WelcomeViewDataSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0948252A2430EFD800C82A2B /* IceCreamParlorChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceCreamParlorChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0948252D2430EFD800C82A2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0948252F2430EFD800C82A2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		094825342430EFD800C82A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		094825362430EFDA00C82A2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		094825392430EFDA00C82A2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0948253B2430EFDA00C82A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		094825472430F2DD00C82A2B /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		0948254D2430F58E00C82A2B /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		0948254F2430F64200C82A2B /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		094825512430F95B00C82A2B /* IceCreamNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamNetworkService.swift; sourceTree = "<group>"; };
+		094825532430FCF800C82A2B /* IceCreamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamModel.swift; sourceTree = "<group>"; };
+		094825552431006500C82A2B /* IceCreamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamViewModel.swift; sourceTree = "<group>"; };
+		09482559243103D700C82A2B /* IceCreamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamView.swift; sourceTree = "<group>"; };
+		0948255B243103EB00C82A2B /* IceCreamView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IceCreamView.xib; sourceTree = "<group>"; };
+		0948255D24310C5B00C82A2B /* IceCreamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamCollectionViewCell.swift; sourceTree = "<group>"; };
+		0948255F24310E0700C82A2B /* WelcomeViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewDataSource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		094825272430EFD800C82A2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		094825212430EFD800C82A2B = {
+			isa = PBXGroup;
+			children = (
+				0948252C2430EFD800C82A2B /* IceCreamParlorChallenge */,
+				0948252B2430EFD800C82A2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0948252B2430EFD800C82A2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0948252A2430EFD800C82A2B /* IceCreamParlorChallenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0948252C2430EFD800C82A2B /* IceCreamParlorChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				094825582431039600C82A2B /* Views */,
+				0948254B2430F4E800C82A2B /* Utils */,
+				094825442430F2DD00C82A2B /* DataManagers */,
+				094825482430F2DD00C82A2B /* Models */,
+				094825462430F2DD00C82A2B /* ViewControllers */,
+				094825492430F2DD00C82A2B /* ViewModels */,
+				0948252D2430EFD800C82A2B /* AppDelegate.swift */,
+				0948252F2430EFD800C82A2B /* SceneDelegate.swift */,
+				094825332430EFD800C82A2B /* Main.storyboard */,
+				094825362430EFDA00C82A2B /* Assets.xcassets */,
+				094825382430EFDA00C82A2B /* LaunchScreen.storyboard */,
+				0948253B2430EFDA00C82A2B /* Info.plist */,
+			);
+			path = IceCreamParlorChallenge;
+			sourceTree = "<group>";
+		};
+		094825442430F2DD00C82A2B /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				094825452430F2DD00C82A2B /* API */,
+			);
+			path = DataManagers;
+			sourceTree = "<group>";
+		};
+		094825452430F2DD00C82A2B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				094825512430F95B00C82A2B /* IceCreamNetworkService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		094825462430F2DD00C82A2B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				094825572431038C00C82A2B /* DataSource */,
+				094825472430F2DD00C82A2B /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		094825482430F2DD00C82A2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				094825532430FCF800C82A2B /* IceCreamModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		094825492430F2DD00C82A2B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				094825552431006500C82A2B /* IceCreamViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0948254B2430F4E800C82A2B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0948254C2430F4F300C82A2B /* Extensions */,
+				0948254F2430F64200C82A2B /* GlobalConstants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0948254C2430F4F300C82A2B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0948254D2430F58E00C82A2B /* UIColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		094825572431038C00C82A2B /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				0948255F24310E0700C82A2B /* WelcomeViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		094825582431039600C82A2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				09482559243103D700C82A2B /* IceCreamView.swift */,
+				0948255B243103EB00C82A2B /* IceCreamView.xib */,
+				0948255D24310C5B00C82A2B /* IceCreamCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		094825292430EFD800C82A2B /* IceCreamParlorChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0948253E2430EFDA00C82A2B /* Build configuration list for PBXNativeTarget "IceCreamParlorChallenge" */;
+			buildPhases = (
+				094825262430EFD800C82A2B /* Sources */,
+				094825272430EFD800C82A2B /* Frameworks */,
+				094825282430EFD800C82A2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IceCreamParlorChallenge;
+			productName = IceCreamParlorChallenge;
+			productReference = 0948252A2430EFD800C82A2B /* IceCreamParlorChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		094825222430EFD800C82A2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Ingrid Guerrero";
+				TargetAttributes = {
+					094825292430EFD800C82A2B = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 094825252430EFD800C82A2B /* Build configuration list for PBXProject "IceCreamParlorChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 094825212430EFD800C82A2B;
+			productRefGroup = 0948252B2430EFD800C82A2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				094825292430EFD800C82A2B /* IceCreamParlorChallenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		094825282430EFD800C82A2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0948253A2430EFDA00C82A2B /* LaunchScreen.storyboard in Resources */,
+				0948255C243103EB00C82A2B /* IceCreamView.xib in Resources */,
+				094825372430EFDA00C82A2B /* Assets.xcassets in Resources */,
+				094825352430EFD800C82A2B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		094825262430EFD800C82A2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0948252E2430EFD800C82A2B /* AppDelegate.swift in Sources */,
+				0948256024310E0700C82A2B /* WelcomeViewDataSource.swift in Sources */,
+				094825542430FCF800C82A2B /* IceCreamModel.swift in Sources */,
+				0948254A2430F2DD00C82A2B /* WelcomeViewController.swift in Sources */,
+				094825502430F64200C82A2B /* GlobalConstants.swift in Sources */,
+				094825522430F95B00C82A2B /* IceCreamNetworkService.swift in Sources */,
+				094825302430EFD800C82A2B /* SceneDelegate.swift in Sources */,
+				0948255E24310C5B00C82A2B /* IceCreamCollectionViewCell.swift in Sources */,
+				0948254E2430F58E00C82A2B /* UIColorExtensions.swift in Sources */,
+				094825562431006500C82A2B /* IceCreamViewModel.swift in Sources */,
+				0948255A243103D700C82A2B /* IceCreamView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		094825332430EFD800C82A2B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				094825342430EFD800C82A2B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		094825382430EFDA00C82A2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				094825392430EFDA00C82A2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0948253C2430EFDA00C82A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0948253D2430EFDA00C82A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0948253F2430EFDA00C82A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IceCreamParlorChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.StreetCoding.IceCreamParlorChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		094825402430EFDA00C82A2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IceCreamParlorChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.StreetCoding.IceCreamParlorChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		094825252430EFD800C82A2B /* Build configuration list for PBXProject "IceCreamParlorChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0948253C2430EFDA00C82A2B /* Debug */,
+				0948253D2430EFDA00C82A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0948253E2430EFDA00C82A2B /* Build configuration list for PBXNativeTarget "IceCreamParlorChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0948253F2430EFDA00C82A2B /* Debug */,
+				094825402430EFDA00C82A2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 094825222430EFD800C82A2B /* Project object */;
+}
