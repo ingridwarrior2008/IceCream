@@ -52,15 +52,38 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="153" height="219"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 </view>
+                                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7C-qF-aI6" userLabel="CountView">
+                                                    <rect key="frame" x="123" y="0.0" width="30" height="30"/>
+                                                    <subviews>
+                                                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSj-SY-FEC">
+                                                            <rect key="frame" x="0.0" y="8" width="28" height="14"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="appMainColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="dSj-SY-FEC" firstAttribute="centerY" secondItem="B7C-qF-aI6" secondAttribute="centerY" id="3gf-RR-sei"/>
+                                                        <constraint firstAttribute="width" constant="30" id="YG1-H4-YOb"/>
+                                                        <constraint firstAttribute="trailing" secondItem="dSj-SY-FEC" secondAttribute="trailing" constant="2" id="kzb-DL-A8l"/>
+                                                        <constraint firstItem="dSj-SY-FEC" firstAttribute="leading" secondItem="B7C-qF-aI6" secondAttribute="leading" id="tVC-Vv-Jcg"/>
+                                                        <constraint firstAttribute="height" constant="30" id="w3E-RU-PYo"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="0vu-NU-oY4" firstAttribute="leading" secondItem="9Ig-E9-c5c" secondAttribute="leading" id="9su-GA-X0S"/>
                                                 <constraint firstItem="0vu-NU-oY4" firstAttribute="top" secondItem="9Ig-E9-c5c" secondAttribute="top" constant="0.1042894999428654" id="JdY-Ys-a6f"/>
+                                                <constraint firstItem="B7C-qF-aI6" firstAttribute="top" secondItem="9Ig-E9-c5c" secondAttribute="top" id="oqx-nS-Hwm"/>
+                                                <constraint firstAttribute="trailing" secondItem="B7C-qF-aI6" secondAttribute="trailing" id="q2g-SB-XGf"/>
                                                 <constraint firstAttribute="trailing" secondItem="0vu-NU-oY4" secondAttribute="trailing" constant="-2.8421709430404007e-14" id="sca-Yr-5yj"/>
                                                 <constraint firstAttribute="bottom" secondItem="0vu-NU-oY4" secondAttribute="bottom" constant="-0.1042894999428654" id="zfK-JW-2kF"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
+                                            <outlet property="countLabel" destination="dSj-SY-FEC" id="qeu-Qr-FXr"/>
+                                            <outlet property="countView" destination="B7C-qF-aI6" id="mmo-u8-g35"/>
                                             <outlet property="iceCreamView" destination="0vu-NU-oY4" id="eXI-CZ-KUr"/>
                                         </connections>
                                     </collectionViewCell>
@@ -88,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="544.92753623188412" y="73.660714285714278"/>
+            <point key="canvasLocation" x="544.79999999999995" y="73.313343328335833"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3lq-aI-JAd">

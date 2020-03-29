@@ -42,7 +42,7 @@ class IceCreamView: UIView {
     
     func setup() {
         guard let view = nibView else { return }
-        view.frame = bounds
+        view.frame = CGRect(x: 5, y: 5, width: bounds.width - 10, height: bounds.height - 10)
         addSubview(view)
         contentView = view
     }

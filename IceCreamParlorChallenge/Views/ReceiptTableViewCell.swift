@@ -31,5 +31,4 @@ class ReceiptTableViewCell: UITableViewCell {
         
         priceLabel.text = model.price
     }
-
 }

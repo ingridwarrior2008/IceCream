@@ -56,12 +56,13 @@ extension WelcomeViewDataSource: UICollectionViewDataSource {
             let model = iceCreams[indexPath.row]
             let iceCreamDictionary = iceCreamsSelected[indexPath.row]
             var isIceCreamSelected = false
-            
+            var selectedTimes = 0
             if let numberOfSelectedTimes = iceCreamDictionary[model],
                 numberOfSelectedTimes > 0 {
                 isIceCreamSelected = true
+                selectedTimes = numberOfSelectedTimes
             }
-            cell.configure(model: model, selected: isIceCreamSelected)
+            cell.configure(model: model, selected: isIceCreamSelected, numberOfSelectedTimes: selectedTimes)
             collectionViewCell = cell
         }
         
