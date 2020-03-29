@@ -39,7 +39,7 @@ struct IceCreamModel: Decodable {
     var type: IceCreamType = .none
     
     var iceCreamName: String {
-        return nameTitle + nameSubTitle
+        return nameTitle + " " + nameSubTitle
     }
     
     enum CodingKeys: String, CodingKey {

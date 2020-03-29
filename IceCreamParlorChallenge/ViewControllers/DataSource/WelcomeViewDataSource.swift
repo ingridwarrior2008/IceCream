@@ -14,6 +14,12 @@ class WelcomeViewDataSource: NSObject {
     private(set) var collectionView: UICollectionView
     private var iceCreams: [IceCreamModel]
     
+    struct Constants {
+        static let cellWidth = 153
+        static let cellHeight = 219
+    }
+
+    
     init(viewController: WelcomeViewController, collectionView: UICollectionView, iceCreams: [IceCreamModel]) {
         self.viewController = viewController
         self.collectionView = collectionView
@@ -47,9 +53,8 @@ extension WelcomeViewDataSource: UICollectionViewDataSource {
     }
 }
 
-extension WelcomeViewDataSource: UICollectionViewDelegate {
-    
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+extension WelcomeViewDataSource: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: Constants.cellWidth, height: Constants.cellHeight)
     }
 }

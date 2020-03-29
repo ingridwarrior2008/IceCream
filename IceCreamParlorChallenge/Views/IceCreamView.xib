@@ -42,18 +42,17 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pVc-ev-fU6">
-                            <rect key="frame" x="0.0" y="153" width="153" height="1"/>
-                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <rect key="frame" x="16" y="153" width="121" height="1"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="kia-dy-mUK"/>
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="pVc-ev-fU6" firstAttribute="leading" secondItem="Otl-uB-rQJ" secondAttribute="leading" id="3w3-Ul-wlh"/>
+                        <constraint firstItem="pVc-ev-fU6" firstAttribute="leading" secondItem="Otl-uB-rQJ" secondAttribute="leading" constant="16" id="3w3-Ul-wlh"/>
                         <constraint firstAttribute="height" constant="154" id="4G8-m9-tQb"/>
-                        <constraint firstAttribute="trailing" secondItem="pVc-ev-fU6" secondAttribute="trailing" id="ahA-bk-QLo"/>
+                        <constraint firstAttribute="trailing" secondItem="pVc-ev-fU6" secondAttribute="trailing" constant="16" id="ahA-bk-QLo"/>
                         <constraint firstItem="hbR-yI-t3R" firstAttribute="centerY" secondItem="Otl-uB-rQJ" secondAttribute="centerY" id="nNI-LW-pJA"/>
                         <constraint firstAttribute="bottom" secondItem="pVc-ev-fU6" secondAttribute="bottom" id="o6D-Q6-7JW"/>
                         <constraint firstItem="hbR-yI-t3R" firstAttribute="centerX" secondItem="Otl-uB-rQJ" secondAttribute="centerX" id="zvv-3h-itV"/>

@@ -38,16 +38,22 @@ class IceCreamView: UIView {
     func setup() {
         guard let view = nibView else { return }
         view.frame = bounds
-        view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         addSubview(view)
         contentView = view
     }
     
-    func configure(model: IceCreamModel) {
+    func configure(model: IceCreamModel, selected: Bool = false) {
         imageBackground.backgroundColor = UIColor(hexString: model.color)
         imageBackground.layer.cornerRadius = imageBackground.frame.size.width / 2
         iceCreamImage.image = UIImage(named: model.type.imageName)
         iceCreamLabel.text = model.iceCreamName
         iceCreamPriceLabel.text = model.price
+        
+        if selected {
+            
+        } else {
+            contentView?.layer.borderWidth = 0.3
+            contentView?.layer.borderColor = UIColor.gray.cgColor
+        }
     }
 }
