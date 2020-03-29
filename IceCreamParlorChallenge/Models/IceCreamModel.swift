@@ -31,7 +31,7 @@ enum IceCreamType: String {
     }
 }
 
-struct IceCreamModel: Decodable {
+struct IceCreamModel: Decodable, Hashable {
     var nameTitle: String
     var nameSubTitle: String
     var color: String

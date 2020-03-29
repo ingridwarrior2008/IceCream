@@ -23,6 +23,11 @@ class IceCreamView: UIView {
     @IBOutlet weak var iceCreamLabel: UILabel!
     @IBOutlet weak var iceCreamPriceLabel: UILabel!
     
+    struct Constants {
+        static let borderWidth: CGFloat = 0.3
+        static let borderSelectedWidth: CGFloat = 2
+    }
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -50,10 +55,14 @@ class IceCreamView: UIView {
         iceCreamPriceLabel.text = model.price
         
         if selected {
-            
+            setBorderUI(width: Constants.borderSelectedWidth, color: appMainColor.cgColor)
         } else {
-            contentView?.layer.borderWidth = 0.3
-            contentView?.layer.borderColor = UIColor.gray.cgColor
+            setBorderUI(width: Constants.borderWidth, color: UIColor.gray.cgColor)
         }
+    }
+    
+    private func setBorderUI(width: CGFloat, color: CGColor) {
+        contentView?.layer.borderWidth = width
+        contentView?.layer.borderColor = color
     }
 }

@@ -9,11 +9,11 @@
 import UIKit
 
 class IceCreamCollectionViewCell: UICollectionViewCell {
-    static let identifier = "IceCreamCollectionViewCell"
+    static let identifier = String(describing: IceCreamCollectionViewCell.self)
     
     @IBOutlet weak var iceCreamView: IceCreamView!
     
-    func configure(model: IceCreamModel) {
-        iceCreamView.configure(model: model)
+    func configure(model: IceCreamModel, selected: Bool = false) {
+        iceCreamView.configure(model: model, selected: selected)
     }
 }

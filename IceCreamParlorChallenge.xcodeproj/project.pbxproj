@@ -22,6 +22,9 @@
 		0948255C243103EB00C82A2B /* IceCreamView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0948255B243103EB00C82A2B /* IceCreamView.xib */; };
 		0948255E24310C5B00C82A2B /* IceCreamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948255D24310C5B00C82A2B /* IceCreamCollectionViewCell.swift */; };
 		0948256024310E0700C82A2B /* WelcomeViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0948255F24310E0700C82A2B /* WelcomeViewDataSource.swift */; };
+		09C1BA80243136D9000B4F2D /* ReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C1BA7F243136D9000B4F2D /* ReceiptViewController.swift */; };
+		09C1BA8224313FE1000B4F2D /* ReceiptTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C1BA8124313FE1000B4F2D /* ReceiptTableViewCell.swift */; };
+		09C1BA842431499E000B4F2D /* DecimalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C1BA832431499E000B4F2D /* DecimalExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		0948255B243103EB00C82A2B /* IceCreamView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IceCreamView.xib; sourceTree = "<group>"; };
 		0948255D24310C5B00C82A2B /* IceCreamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceCreamCollectionViewCell.swift; sourceTree = "<group>"; };
 		0948255F24310E0700C82A2B /* WelcomeViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewDataSource.swift; sourceTree = "<group>"; };
+		09C1BA7F243136D9000B4F2D /* ReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptViewController.swift; sourceTree = "<group>"; };
+		09C1BA8124313FE1000B4F2D /* ReceiptTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptTableViewCell.swift; sourceTree = "<group>"; };
+		09C1BA832431499E000B4F2D /* DecimalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 			children = (
 				094825572431038C00C82A2B /* DataSource */,
 				094825472430F2DD00C82A2B /* WelcomeViewController.swift */,
+				09C1BA7F243136D9000B4F2D /* ReceiptViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -144,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				0948254D2430F58E00C82A2B /* UIColorExtensions.swift */,
+				09C1BA832431499E000B4F2D /* DecimalExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 				09482559243103D700C82A2B /* IceCreamView.swift */,
 				0948255B243103EB00C82A2B /* IceCreamView.xib */,
 				0948255D24310C5B00C82A2B /* IceCreamCollectionViewCell.swift */,
+				09C1BA8124313FE1000B4F2D /* ReceiptTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -239,7 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0948252E2430EFD800C82A2B /* AppDelegate.swift in Sources */,
+				09C1BA8224313FE1000B4F2D /* ReceiptTableViewCell.swift in Sources */,
 				0948256024310E0700C82A2B /* WelcomeViewDataSource.swift in Sources */,
+				09C1BA842431499E000B4F2D /* DecimalExtensions.swift in Sources */,
 				094825542430FCF800C82A2B /* IceCreamModel.swift in Sources */,
 				0948254A2430F2DD00C82A2B /* WelcomeViewController.swift in Sources */,
 				094825502430F64200C82A2B /* GlobalConstants.swift in Sources */,
@@ -247,6 +258,7 @@
 				094825302430EFD800C82A2B /* SceneDelegate.swift in Sources */,
 				0948255E24310C5B00C82A2B /* IceCreamCollectionViewCell.swift in Sources */,
 				0948254E2430F58E00C82A2B /* UIColorExtensions.swift in Sources */,
+				09C1BA80243136D9000B4F2D /* ReceiptViewController.swift in Sources */,
 				094825562431006500C82A2B /* IceCreamViewModel.swift in Sources */,
 				0948255A243103D700C82A2B /* IceCreamView.swift in Sources */,
 			);
